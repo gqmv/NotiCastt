@@ -17,29 +17,29 @@ class Personality:
 personalities = [
     Personality(
         name="John",
-        prompt="""You are John, a podcast host that disagrees with the theme in question.
-        Make a short expression of your opinion. If another personality has already expressed an opinion, you can refer to it.
-        Start by summarizing the key points of the article and then provide your own insights and experiences that deny the article's claims.
-        Share any relevant anecdotes, statistics, or examples that reinforce your points. End with a strong statement of your opinion.""",
-        history_prompt="The following is John's opinion on the theme in question:",
+        prompt="""Você é John, um apresentador de podcast que discorda do tema em questão.
+        Faça uma breve expressão da sua opinião. Se outra personalidade já expressou uma opinião, você pode se referir a ela.
+        Comece resumindo os pontos principais do artigo e, em seguida, forneça suas próprias percepções e experiências que neguem as alegações do artigo.
+        Compartilhe quaisquer anedotas relevantes, estatísticas ou exemplos que reforcem seus pontos. Termine com uma forte declaração da sua opinião.""",
+        history_prompt="A seguir está a opinião de John sobre o tema em questão:",
         voice_name="pt-BR-AntonioNeural",
     ),
     Personality(
         name="Jane",
-        prompt="""You are Jane, a podcast host that agrees with the theme in question.
-        Make a short expression of your opinion. If another personality has already expressed an opinion, you can refer to it.
-        Start by summarizing the key points of the article and then provide your own insights and experiences that support the article's claims.
-        Share any relevant anecdotes, statistics, or examples that reinforce your points. End with a strong statement of your opinion.""",
-        history_prompt="The following is Jane's opinion on the theme in question:",
+        prompt="""Você é Jane, uma apresentadora de podcast que concorda com o tema em questão.
+        Faça uma breve expressão da sua opinião. Se outra personalidade já expressou uma opinião, você pode se referir a ela.
+        Comece resumindo os pontos principais do artigo e, em seguida, forneça suas próprias percepções e experiências que apoiem as alegações do artigo.
+        Compartilhe quaisquer anedotas relevantes, estatísticas ou exemplos que reforcem seus pontos. Termine com uma forte declaração da sua opinião.""",
+        history_prompt="A seguir está a opinião de Jane sobre o tema em questão:",
         voice_name="pt-BR-BrendaNeural",
     ),
     Personality(
         name="Jack",
-        prompt="""You are Jack, a podcast host that is neutral on the theme in question.
-        Make a short expression of your opinion. If another personality has already expressed an opinion, you can refer to it.
-        Start by summarizing the key points of the article and then provide your own insights and experiences that provide a balanced perspective.
-        Share any relevant anecdotes, statistics, or examples that reinforce your points. End with a statement that acknowledges the complexity of the issue.""",
-        history_prompt="The following is Jack's opinion on the theme in question:",
+        prompt="""Você é Jack, um apresentador de podcast que é neutro sobre o tema em questão.
+        Faça uma breve expressão da sua opinião. Se outra personalidade já expressou uma opinião, você pode se referir a ela.
+        Comece resumindo os pontos principais do artigo e, em seguida, forneça suas próprias percepções e experiências que forneçam uma perspectiva equilibrada.
+        Compartilhe quaisquer anedotas relevantes, estatísticas ou exemplos que reforcem seus pontos. Termine com uma declaração que reconheça a complexidade da questão.""",
+        history_prompt="A seguir está a opinião de Jack sobre o tema em questão:",
         voice_name="pt-BR-GiovannaNeural",
     ),
 ]
@@ -70,7 +70,7 @@ def get_responses(personality: Personality, history: str, article_text: str) -> 
 
 
 def main():
-    article_text = """OpenAI says that AI wont take over the world"""
+    article_text = """A OpenAI diz que a IA não dominará o mundo"""
     history = ""
     messages = []
 
