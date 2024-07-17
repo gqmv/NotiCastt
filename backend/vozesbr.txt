@@ -1,0 +1,16 @@
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, FranciscaNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Female, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, AntonioNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Male, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, BrendaNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Female, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, DonatoNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Male, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, ElzaNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Female, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, FabioNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Male, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, GiovannaNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Female, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, HumbertoNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Male, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, JulioNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Male, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, LeilaNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Female, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, LeticiaNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Female, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, ManuelaNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Female, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, NicolauNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Male, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, ThalitaNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Female, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, ValerioNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Male, Voice Path: 
+Voice Name: Microsoft Server Speech Text to Speech Voice (pt-BR, YaraNeural), Locale: pt-BR, Gender: SynthesisVoiceGender.Female, Voice Path: 
