@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from configs import OPENAI_API_KEY, OPENAI_MODEL
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
+from text_to_speech import generate_audio_for_voices
 
 
 @dataclass
@@ -21,7 +22,7 @@ personalities = [
         Start by summarizing the key points of the article and then provide your own insights and experiences that deny the article's claims.
         Share any relevant anecdotes, statistics, or examples that reinforce your points. End with a strong statement of your opinion.""",
         history_prompt="The following is John's opinion on the theme in question:",
-        voice_name="John",
+        voice_name="pt-BR-AntonioNeural",
     ),
     Personality(
         name="Jane",
@@ -30,7 +31,7 @@ personalities = [
         Start by summarizing the key points of the article and then provide your own insights and experiences that support the article's claims.
         Share any relevant anecdotes, statistics, or examples that reinforce your points. End with a strong statement of your opinion.""",
         history_prompt="The following is Jane's opinion on the theme in question:",
-        voice_name="Jane",
+        voice_name="pt-BR-BrendaNeural",
     ),
     Personality(
         name="Jack",
@@ -39,7 +40,7 @@ personalities = [
         Start by summarizing the key points of the article and then provide your own insights and experiences that provide a balanced perspective.
         Share any relevant anecdotes, statistics, or examples that reinforce your points. End with a statement that acknowledges the complexity of the issue.""",
         history_prompt="The following is Jack's opinion on the theme in question:",
-        voice_name="Jack",
+        voice_name="pt-BR-GiovannaNeural",
     ),
 ]
 
@@ -77,10 +78,14 @@ def main():
         response = get_responses(personality, history, article_text)
         history += f"{personality.history_prompt}\n{response}\n\n"
         messages.append(Message(text=response, personality=personality))
-        
 
-    for message in messages:
-        print(f"{message.personality.name}: {message.text}")
+    voices = [personality.voice_name for personality in personalities]
+    texts = [message.text for message in messages]
+
+    print(voices)
+    print(texts)
+
+    generate_audio_for_voices(texts, voices, "output")
 
 
 if __name__ == "__main__":
