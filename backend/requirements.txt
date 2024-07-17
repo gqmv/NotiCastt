@@ -2,3 +2,4 @@ langchain
 langchain-openai
 pydub
 azure-cognitiveservices-speech
+bs4

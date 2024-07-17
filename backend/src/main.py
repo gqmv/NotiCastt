@@ -4,6 +4,7 @@ from configs import OPENAI_API_KEY, OPENAI_MODEL
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from text_to_speech import generate_audio_for_voices
+from scraper import g1_scraper
 
 
 @dataclass
@@ -70,7 +71,9 @@ def get_responses(personality: Personality, history: str, article_text: str) -> 
 
 
 def main():
-    article_text = """A OpenAI diz que a IA não dominará o mundo"""
+    url = "https://g1.globo.com/economia/noticia/2024/07/17/taxad-entenda-as-criticas-ao-ministro-da-fazenda.ghtml"
+    article_title, article_text = g1_scraper(url)
+    
     history = ""
     messages = []
 
