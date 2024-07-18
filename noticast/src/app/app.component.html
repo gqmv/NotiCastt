@@ -1,78 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticast</title>
+</head>
 <body>
-  <div class="header">
-    <div class="navlinks">
-      <h1 id="logo">NotiCast</h1>
-      <ul>
-        <li><a href="">header link one</a></li>
-        <li><a href="">header link two</a></li>
-        <li><a href="">header link three</a></li>
-      </ul>
-    </div>
-    <div class="hero">
-      <div class="herotxt">
-        <h2>Transforme seu post em podcast!</h2>
+  <app-header></app-header> <br>
+  <app-article-input></app-article-input> <br>
+  <app-personalities></app-personalities>
 
-        <div>
-          <label for="link-input">Link:</label>
-          <br />
-          <input
-            type="text"
-            class="form-control"
-            id="link-input"
-            placeholder="Coloque aqui o link"
-          />
-        </div>
-
-        <br />
-        <button>Gerar</button>
-      </div>
-    </div>
-    <div></div>
-  </div>
-
-  <div class="info">
-    <h3>Escolha uma voz:</h3>
-    <div class="blocks">
-      <div>
-        <img src="" alt="" />
-        <a href="">Voice 1</a>
-      </div>
-      <div>
-        <img src="" alt="" />
-        <a href="">Voice 2</a>
-      </div>
-      <div>
-        <img src="" alt="" />
-        <a href="">Voice 3</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="quote">
-    <h4>
-      "I'm really glad for creating chat GPT, now i have a quick way to know
-      whats happening around the world. Why would I stop and read an entire
-      article on the internet when I could just NotiCast it?"
-    </h4>
-    <p>-Sam Altman</p>
-  </div>
-
-  <div class="call">
-    <div class="textarea">
-      <p class="p1">
-        It's time to join us and learn! Come to work in our group with us!
-      </p>
-      <p>
-        Sign up to the weekly release of new content by Our group, from
-        NotiCasts and Podcasts to even life-coach sessions!
-      </p>
-    </div>
-    <div class="btn"><button>Sign up</button></div>
-  </div>
-
-  <div class="copyright">
-    <p>Copyright © NotiCast 2024</p>
-  </div>
+  <app-footer></app-footer>
+  
 </body>
-
-<router-outlet></router-outlet>
+</html>
