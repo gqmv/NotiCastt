@@ -77,13 +77,18 @@ def main():
     history = ""
     messages = []
 
-    for personality in personalities:
-        response = get_responses(personality, history, article_text)
-        history += f"{personality.history_prompt}\n{response}\n\n"
-        messages.append(Message(text=response, personality=personality))
+    personalities_iterations = 3
 
-    voices = [personality.voice_name for personality in personalities]
-    texts = [message.text for message in messages]
+    for _ in range(personalities_iterations):
+        print("LOG: Iteration", _)
+        for personality in personalities:
+            print("LOG: Personality", personality.name)
+            response = get_responses(personality, history, article_text)
+            history += f"{personality.history_prompt}\n{response}\n\n"
+            messages.append(Message(text=response, personality=personality))
+
+    voices = [personality.voice_name for personality in personalities for _ in range(personalities_iterations)]
+    texts = [message.text for message in messages for _ in range(personalities_iterations)]
 
     print(voices)
     print(texts)
