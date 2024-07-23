@@ -4,3 +4,4 @@ pydub
 azure-cognitiveservices-speech
 bs4
 flask
+flask-cors
