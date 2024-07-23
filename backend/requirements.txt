@@ -3,3 +3,4 @@ langchain-openai
 pydub
 azure-cognitiveservices-speech
 bs4
+flask
