@@ -63,7 +63,7 @@ export default function Home() {
                   _hover={{
                     bg: 'orange.500',
                   }}>
-                  Gerar PodCast
+                  Gerar NotiCast
                 </Button>
                 <Button rounded={'full'} onClick={scrollToSaibaMais}>Saiba Mais</Button>
               </Stack>
