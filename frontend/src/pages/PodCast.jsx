@@ -34,7 +34,7 @@ export default function PodCast() {
   const onSubmit = async ({ url }) => {
     try {
       setState('submitting');
-      const response = await fetch('http://localhost:5000/g1', {
+      const response = await fetch('https://noticastt-zrpffjruhq-uc.a.run.app/g1', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
