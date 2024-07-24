@@ -93,7 +93,7 @@ def generate_podcast(url):
     voices = [personality.voice_name for _ in range(personalities_iterations) for personality in personalities]
     texts = [message.text for _ in range(personalities_iterations) for message in messages]
 
-    directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'output'))
+    directory = os.path.abspath(os.path.join(os.path.dirname(__file__), 'output'))
     file_path = os.path.join(directory, 'combined_audio.wav')
 
     generate_audio_for_voices(texts, voices, "output")

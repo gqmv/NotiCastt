@@ -4,6 +4,8 @@ FROM python:3.12
 # Set the working directory in the container
 WORKDIR /app
 
+RUN apt-get -y update && apt-get -y upgrade && apt-get install -y --no-install-recommends ffmpeg
+
 # Copy the requirements file to the working directory
 COPY requirements.txt .
 
