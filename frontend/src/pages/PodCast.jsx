@@ -1,21 +1,21 @@
-import { useState } from 'react';
+import { CheckIcon } from '@chakra-ui/icons';
 import {
-  Stack,
-  FormControl,
-  Input,
+  Box,
   Button,
-  useColorModeValue,
-  Heading,
-  Text,
   Container,
   Flex,
-  Box,
+  FormControl,
+  Heading,
+  Input,
   Spacer,
+  Stack,
+  Text,
+  useColorModeValue,
 } from '@chakra-ui/react';
-import { CheckIcon } from '@chakra-ui/icons';
-import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { z } from 'zod';
 
 const urlSchema = z.object({
   url: z.string().url(),
